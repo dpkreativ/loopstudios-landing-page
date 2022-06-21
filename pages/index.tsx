@@ -34,7 +34,25 @@ const Home: NextPage = () => {
 
         {/* Intro Section */}
         <section className="p-5 py-16">
-          <h2>The leader in interactive VR</h2>
+          <div className="relative w-full">
+            {/* <Image
+              src="/assets/images/mobile/image-interactive.jpg"
+              layout="fill"
+              objectFit="contain"
+            /> */}
+            <img src="/assets/images/mobile/image-interactive.jpg" alt="heh" />
+          </div>
+          <div className="py-10">
+            <h2 className="font-title uppercase text-4xl text-center">
+              The leader in interactive VR
+            </h2>
+            <p className="p-5 text-center leading-normal text-gray-500">
+              Founded in 2011, Loopstudios has been producing world-class
+              virtual reality projects for some of the best companies around the
+              globe. Our award-winning creations have transformed businesses
+              through digital experiences that bind to their brand.
+            </p>
+          </div>
         </section>
       </HomeLayout>
     </div>
