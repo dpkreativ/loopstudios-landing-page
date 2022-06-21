@@ -4,12 +4,12 @@ import { Hamburger } from '../atoms/Icons';
 
 export default function Header() {
   return (
-    <header>
-      <nav className="flex justify-between">
+    <header className="px-5 py-6">
+      <nav className="flex justify-between text-white">
         <Brand />
 
         {/* Menu */}
-        <div className="text-black">
+        <div>
           <Hamburger />
         </div>
       </nav>
