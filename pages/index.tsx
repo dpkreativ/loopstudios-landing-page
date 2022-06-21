@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import HomeLayout from '../components/Layouts/HomeLayout';
 
 const Home: NextPage = () => {
   return (
@@ -10,7 +11,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="">Hello Divi</main>
+      <HomeLayout>Hello</HomeLayout>
     </div>
   );
 };
