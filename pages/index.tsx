@@ -14,8 +14,8 @@ const Home: NextPage = () => {
 
       <HomeLayout>
         {/* Hero Section */}
-        <section className="h-full grid grid-rows-1 items-center">
-          <div className="absolute h-full w-full top-0 -z-20">
+        <section className="h-full grid grid-rows-1 items-center min-h-screen -mt-16">
+          <div className="absolute h-screen w-full top-0 -z-20">
             <Image
               src="/assets/images/mobile/image-hero.jpg"
               layout="fill"
@@ -30,6 +30,11 @@ const Home: NextPage = () => {
               <div>Deliver</div>
             </h1>
           </article>
+        </section>
+
+        {/* Intro Section */}
+        <section className="p-5 py-16">
+          <h2>The leader in interactive VR</h2>
         </section>
       </HomeLayout>
     </div>

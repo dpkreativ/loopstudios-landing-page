@@ -8,9 +8,11 @@ type HomeLayoutProps = {
 
 export default function HomeLayout({ children }: HomeLayoutProps) {
   return (
-    <div className="grid grid-rows-[max-content_1fr_max-content] min-h-screen h-full">
+    <div className="grid grid-rows-[max-content_minmax(0,100%)_max-content] min-h-screen h-full">
       <Header />
-      <main>{children}</main>
+      <main>
+        <section>{children}</section>
+      </main>
       <Footer />
     </div>
   );
