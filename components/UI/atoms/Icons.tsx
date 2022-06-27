@@ -1,14 +1,71 @@
 export function Hamburger() {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      width="24"
-      height="24"
-      fill="currentColor"
-    >
-      <path fill="none" d="M0 0h24v24H0z" />
-      <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" />
-    </svg>
+    <div className="h-full relative">
+      <img
+        src="/assets/images/icon-hamburger.svg"
+        alt="hamburger icon"
+        className="h-full object-contain"
+      />
+    </div>
+  );
+}
+
+export function Close() {
+  return (
+    <div className="h-full relative">
+      <img
+        src="/assets/images/icon-close.svg"
+        alt="close icon"
+        className="h-full object-contain"
+      />
+    </div>
+  );
+}
+
+export function Facebook() {
+  return (
+    <div className="h-full relative">
+      <img
+        src="/assets/images/icon-facebook.svg"
+        alt="facebook icon"
+        className="h-full object-contain"
+      />
+    </div>
+  );
+}
+
+export function Instagram() {
+  return (
+    <div className="h-full relative">
+      <img
+        src="/assets/images/icon-instagram.svg"
+        alt="instagram icon"
+        className="h-full object-contain"
+      />
+    </div>
+  );
+}
+
+export function Pinterest() {
+  return (
+    <div className="h-full relative">
+      <img
+        src="/assets/images/icon-pinterest.svg"
+        alt="pinterest icon"
+        className="h-full object-contain"
+      />
+    </div>
+  );
+}
+
+export function Twitter() {
+  return (
+    <div className="h-full relative">
+      <img
+        src="/assets/images/icon-twitter.svg"
+        alt="twitter icon"
+        className="h-full object-contain"
+      />
+    </div>
   );
 }

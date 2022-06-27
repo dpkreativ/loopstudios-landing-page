@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
 import HomeLayout from '../components/Layouts/HomeLayout';
+import MobileView from '../components/UI/organisms/MobileView';
 
 const Home: NextPage = () => {
   return (
@@ -13,47 +13,7 @@ const Home: NextPage = () => {
       </Head>
 
       <HomeLayout>
-        {/* Hero Section */}
-        <section className="h-full grid grid-rows-1 items-center min-h-screen -mt-16">
-          <div className="absolute h-screen w-full top-0 -z-20">
-            <Image
-              src="/assets/images/mobile/image-hero.jpg"
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
-          <article className="border-2 border-white mx-5 p-5">
-            <h1 className="font-title uppercase text-white text-[42px] leading-none">
-              <div>Immersive</div>
-              <div>Experiences</div>
-              <div>that</div>
-              <div>Deliver</div>
-            </h1>
-          </article>
-        </section>
-
-        {/* Intro Section */}
-        <section className="p-5 py-16">
-          <div className="relative w-full">
-            {/* <Image
-              src="/assets/images/mobile/image-interactive.jpg"
-              layout="fill"
-              objectFit="contain"
-            /> */}
-            <img src="/assets/images/mobile/image-interactive.jpg" alt="heh" />
-          </div>
-          <div className="py-10">
-            <h2 className="font-title uppercase text-4xl text-center">
-              The leader in interactive VR
-            </h2>
-            <p className="p-5 text-center leading-normal text-gray-500">
-              Founded in 2011, Loopstudios has been producing world-class
-              virtual reality projects for some of the best companies around the
-              globe. Our award-winning creations have transformed businesses
-              through digital experiences that bind to their brand.
-            </p>
-          </div>
-        </section>
+        <MobileView />
       </HomeLayout>
     </div>
   );
