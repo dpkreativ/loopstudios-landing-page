@@ -15,7 +15,7 @@ export default function Modal({ className, children }: ModalTypes) {
 
   // Modal content
   const modalContent = (
-    <div className={`absolute w-full ${className}`}>{children}</div>
+    <div className={`absolute w-full z-50 ${className}`}>{children}</div>
   );
   return isBrowser
     ? ReactDOM.createPortal(
