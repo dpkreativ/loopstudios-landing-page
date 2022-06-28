@@ -2,7 +2,7 @@ import React, { ReactNode, useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 
 interface ModalTypes {
-  className: string;
+  className?: string;
   children: ReactNode;
 }
 

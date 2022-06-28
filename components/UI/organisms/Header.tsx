@@ -1,6 +1,7 @@
 import React from 'react';
 import Brand from '../atoms/Brand';
 import { Hamburger } from '../atoms/Icons';
+import Modal from '../atoms/Modal';
 
 export default function Header() {
   return (
@@ -11,6 +12,12 @@ export default function Header() {
         {/* Menu */}
         <div>
           <Hamburger />
+        </div>
+        {/* Menu Content */}
+        <div>
+          <Modal>
+            <div>Hi</div>
+          </Modal>
         </div>
       </nav>
     </header>
