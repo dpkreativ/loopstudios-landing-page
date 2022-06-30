@@ -8,11 +8,20 @@ export default function Header() {
 
   return (
     <header className="px-5 h-16 flex items-center z-20">
-      <nav className="flex justify-between text-white w-full">
+      <nav className="flex justify-between text-white w-full max-w-6xl mx-auto">
         <Brand />
 
+        {/* Desktop Menu */}
+        <div className="hidden text-white text-[15px] lg:flex space-x-10">
+          <p>About</p>
+          <p>Careers</p>
+          <p>Events</p>
+          <p>Product</p>
+          <p>Support</p>
+        </div>
+
         {/* Mobile Menu */}
-        <div onClick={() => setShowModal(true)}>
+        <div onClick={() => setShowModal(true)} className="lg:hidden">
           <Hamburger />
         </div>
       </nav>
