@@ -1,39 +1,38 @@
 import Image from 'next/image';
 import CreationImage from '../atoms/CreationImage';
 
-export default function MobileView() {
+export default function DesktopView() {
   return (
-    <div className="lg:hidden">
+    <div className="hidden lg:block">
       {/* Hero Section */}
-      <section className="h-full grid grid-rows-1 items-center min-h-screen -mt-16">
+      <section className="h-full min-h-screen w-full flex items-center -mt-16">
         <div className="absolute h-screen w-full top-0 -z-20">
           <Image
-            src="/assets/images/mobile/image-hero.jpg"
+            src="/assets/images/desktop/image-hero.jpg"
             layout="fill"
             objectFit="cover"
             priority
           />
         </div>
-        <article className="border-2 border-white mx-5 p-5">
-          <h1 className="font-title uppercase text-white text-[42px] leading-none">
+        <article className="w-full max-w-6xl mx-auto">
+          <div className="w-max font-title border-2 border-white p-10 pr-20 uppercase text-white text-7xl leading-none">
             <div>Immersive</div>
             <div>Experiences</div>
-            <div>that</div>
-            <div>Deliver</div>
-          </h1>
+            <div>that Deliver</div>
+          </div>
         </article>
       </section>
 
       {/* Intro Section */}
-      <section className="p-5 mt-16">
-        <div className="relative w-full">
+      <section className="p-5 mt-16 grid grid-cols-2">
+        <div className="relative w-full max-w-2xl">
           <img
-            src="/assets/images/mobile/image-interactive.jpg"
-            alt="vr illustration mobile"
+            src="/assets/images/desktop/image-interactive.jpg"
+            alt="vr illustration desktop"
             className="object-contain w-full"
           />
         </div>
-        <div className="py-10">
+        <div className="p-10 bg-white -mt-20 -ml-20 w-full h-max max-w-2xl z-20">
           <h2 className="font-title uppercase text-4xl text-center">
             The leader in interactive VR
           </h2>
@@ -52,9 +51,9 @@ export default function MobileView() {
           Our Creations
         </h2>
 
-        <div className="flex flex-col space-y-3 mt-5">
+        <div className="grid grid-cols-4 gap-8 mt-5">
           <CreationImage
-            imgSrc="/assets/images/mobile/image-deep-earth.jpg"
+            imgSrc="/assets/images/desktop/image-deep-earth.jpg"
             imgAlt="deep earth"
             imgText={
               <>
@@ -64,7 +63,7 @@ export default function MobileView() {
             }
           />
           <CreationImage
-            imgSrc="/assets/images/mobile/image-night-arcade.jpg"
+            imgSrc="/assets/images/desktop/image-night-arcade.jpg"
             imgAlt="night arcade"
             imgText={
               <>
@@ -74,7 +73,7 @@ export default function MobileView() {
             }
           />
           <CreationImage
-            imgSrc="/assets/images/mobile/image-soccer-team.jpg"
+            imgSrc="/assets/images/desktop/image-soccer-team.jpg"
             imgAlt="soccer team"
             imgText={
               <>
@@ -84,7 +83,7 @@ export default function MobileView() {
             }
           />
           <CreationImage
-            imgSrc="/assets/images/mobile/image-grid.jpg"
+            imgSrc="/assets/images/desktop/image-grid.jpg"
             imgAlt="the grid"
             imgText={
               <>
@@ -94,7 +93,7 @@ export default function MobileView() {
             }
           />
           <CreationImage
-            imgSrc="/assets/images/mobile/image-from-above.jpg"
+            imgSrc="/assets/images/desktop/image-from-above.jpg"
             imgAlt="from up above"
             imgText={
               <>
@@ -104,7 +103,7 @@ export default function MobileView() {
             }
           />
           <CreationImage
-            imgSrc="/assets/images/mobile/image-pocket-borealis.jpg"
+            imgSrc="/assets/images/desktop/image-pocket-borealis.jpg"
             imgAlt="pocket borealis"
             imgText={
               <>
@@ -114,7 +113,7 @@ export default function MobileView() {
             }
           />
           <CreationImage
-            imgSrc="/assets/images/mobile/image-curiosity.jpg"
+            imgSrc="/assets/images/desktop/image-curiosity.jpg"
             imgAlt="the curiosity"
             imgText={
               <>
@@ -124,7 +123,7 @@ export default function MobileView() {
             }
           />
           <CreationImage
-            imgSrc="/assets/images/mobile/image-fisheye.jpg"
+            imgSrc="/assets/images/desktop/image-fisheye.jpg"
             imgAlt="make it fisheye"
             imgText={
               <>

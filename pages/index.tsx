@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import HomeLayout from '../components/Layouts/HomeLayout';
+import DesktopView from '../components/UI/organisms/DesktopView';
 import MobileView from '../components/UI/organisms/MobileView';
 
 const Home: NextPage = () => {
@@ -14,6 +15,7 @@ const Home: NextPage = () => {
 
       <HomeLayout>
         <MobileView />
+        <DesktopView />
       </HomeLayout>
     </div>
   );
