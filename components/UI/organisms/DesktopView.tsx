@@ -24,7 +24,7 @@ export default function DesktopView() {
       </section>
 
       {/* Intro Section */}
-      <section className="p-5 mt-16 grid grid-cols-2">
+      <section className="p-5 mt-16 grid grid-cols-2 relative">
         <div className="relative w-full max-w-2xl">
           <img
             src="/assets/images/desktop/image-interactive.jpg"
@@ -32,7 +32,7 @@ export default function DesktopView() {
             className="object-contain w-full"
           />
         </div>
-        <div className="p-10 bg-white -mt-20 -ml-20 w-full h-max max-w-2xl z-20">
+        <div className="p-10 bg-white absolute bottom-0 right-1/4 w-full h-max max-w-2xl z-20">
           <h2 className="font-title uppercase text-4xl text-center">
             The leader in interactive VR
           </h2>
