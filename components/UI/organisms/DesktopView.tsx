@@ -47,9 +47,12 @@ export default function DesktopView() {
 
       {/* Our Creations */}
       <section className="p-5">
-        <h2 className="font-title uppercase text-4xl text-center">
-          Our Creations
-        </h2>
+        <div className="w-max flex justify-between items-center">
+          <h2 className="font-title uppercase text-4xl">Our Creations</h2>
+          <button className="border-2 border-black uppercase py-2 px-10 active:bg-black active:text-white">
+            See All
+          </button>
+        </div>
 
         <div className="grid grid-cols-4 gap-8 mt-5">
           <CreationImage
@@ -132,12 +135,6 @@ export default function DesktopView() {
               </>
             }
           />
-        </div>
-
-        <div className="w-max mx-auto my-8">
-          <button className="border-2 border-black uppercase py-2 px-10 active:bg-black active:text-white">
-            See All
-          </button>
         </div>
       </section>
     </div>
